@@ -1,16 +1,24 @@
 <!DOCTYPE html>
+
+<!-- attach the Application module to the page -->
 <html ng-app="gemStore">
   <head>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </head>
+
+  <!-- attach a Controller function to the page -->
   <body class="container" ng-controller="StoreController as store">
-    <div class="product row" ng-repeat="product in store.products">
+    <ul class="list-group">
+    <!-- repeat a section for each item in an Array -->
+ <li class="list-group-item" ng-repeat="product in store.products">
       <h3>
         {{product.name}}
-        <em class="pull-right">${{product.price}}</em>
+        <em class="pull-right">{{product.price | currency}}</em>
+        <img ng-src="{{product.images[0].full}}"/>
       </h3>
-    </div>
+    </li>
+    </ul>
   </body>
 </html>
