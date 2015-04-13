@@ -16,6 +16,8 @@
   };
   });
 
+  
+
   var gems = [
    { name: 'Azurite',
      description: "shiny stuff azurite",
@@ -31,4 +33,6 @@
     {full: 'images/zircon.jpg', thumb:'images/zircon-thumb.jpg'}
     ] }
   ];
+
+
 })();

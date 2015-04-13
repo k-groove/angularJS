@@ -20,20 +20,18 @@
         {{product.name}}
         <em class="pull-right">{{product.price | currency}}</em>
         <img ng-src="{{product.images[0].full}}"/>
+
       </h3>
     </li>
     </ul>
     <section ng-controller="PanelController as panel">
     <ul class="nav nav-pills">
     <li ng-class="{ active:panel.isSelected(1)}">
-    <a href ng-click="panel.selectTab(1) ">Description</a>
-    </li>
+    <a href ng-click="panel.selectTab(1) ">Description</a></li>
     <li ng-class="{ active:panel.isSelected(2)}">
-    <a href ng-click="panel.selectTab(2) ">Specifications</a>
-     </li>
+    <a href ng-click="panel.selectTab(2) ">Specifications</a></li>
     <li ng-class="{ active:panel.isSelected(3)}">
-    <a href ng-click="panel.selectTab(3)">Reviews</a>
-     </li>
+    <a href ng-click="panel.selectTab(3)">Reviews</a></li>
     </ul>
     <div class="panel" ng-show="panel.isSelected(1)">
      <h4>Description</h4>
@@ -45,8 +43,13 @@
      </div>
      <div class="panel" ng-show="panel.isSelected(3)">
      <h4>Reviews</h4>
-     <p>none yet</p>
+     <blockquote ng-repeat="review in product.reviews">
+     <b>Stars: {{review.stars}}</b>
+     {{review.body}}
+     <cite>by {{review.author}}</cite>
+      </blockquote>
      </div>
      </section>
+     </div>
   </body>
 </html>
