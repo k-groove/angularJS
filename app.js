@@ -16,22 +16,57 @@
   };
   });
 
-  
-
   var gems = [
    { name: 'Azurite',
      description: "shiny stuff azurite",
      price: 2.95,
      images:[
     {full: 'images/azurite.jpg', thumb:'images/azurite-thumb.jpg'}
+    ],
+    review:[
+    {  	stars:5,
+    	body:"i love this product",
+    	author: "person@email.com"
+    },
+    {  	stars:1,
+    	body:"i hate this product",
+    	author:"hater@gmail.com"
+    }    
     ] 
    },
-    { name: 'Bloodstone', description: "shiny stuff bloodstone", price: 5.95,images:[
+    { name: 'Bloodstone',
+     description: "shiny stuff bloodstone",
+      price: 5.95,
+      images:[
     {full: 'images/bloodstone.jpg', thumb:'images/bloodstone-thumb.jpg'}
-    ] },
-    { name: 'Zircon', description: "shiny stuff zircon", price: 3.95,images:[
+    ],    
+    review:[
+    {  	stars:5,
+    	body:"i love this product",
+    	author: "person@email.com"
+    },
+    {  	stars:1,
+    	body:"i hate this product",
+    	author:"hater@gmail.com"
+    }    
+    ] 
+     },
+    { name: 'Zircon',
+    description: "shiny stuff zircon",
+    price: 3.95,images:[
     {full: 'images/zircon.jpg', thumb:'images/zircon-thumb.jpg'}
-    ] }
+    ],    
+    review:[
+    {  	stars:5,
+    	body:"i love this product",
+    	author: "person@email.com"
+    },
+    {  	stars:1,
+    	body:"i hate this product",
+    	author:"hater@gmail.com"
+    }    
+    ] 
+     }
   ];
 
 
