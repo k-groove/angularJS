@@ -23,7 +23,7 @@
      images:[
     {full: 'images/azurite.jpg', thumb:'images/azurite-thumb.jpg'}
     ],
-    review:[
+    reviews:[
     {  	stars:5,
     	body:"i love this product",
     	author: "person@email.com"
@@ -40,7 +40,7 @@
       images:[
     {full: 'images/bloodstone.jpg', thumb:'images/bloodstone-thumb.jpg'}
     ],    
-    review:[
+    reviews:[
     {  	stars:5,
     	body:"i love this product",
     	author: "person@email.com"
@@ -56,7 +56,7 @@
     price: 3.95,images:[
     {full: 'images/zircon.jpg', thumb:'images/zircon-thumb.jpg'}
     ],    
-    review:[
+    reviews:[
     {  	stars:5,
     	body:"i love this product",
     	author: "person@email.com"

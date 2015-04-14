@@ -13,16 +13,16 @@
 
   <!-- attach a Controller function to the page -->
   <body class="container" ng-controller="StoreController as store">
-    <ul class="list-group">
-    <!-- repeat a section for each item in an Array -->
- <li class="list-group-item" ng-repeat="product in store.products">
+  <!-- repeat a section for each item in an Array -->
+    <ul class="list-group" ng-repeat="product in store.products">    
+ <li class="list-group-item" >
       <h3>
         {{product.name}}
         <em class="pull-right">{{product.price | currency}}</em>
         <img ng-src="{{product.images[0].full}}"/>
       </h3>
     </li>
-    </ul>
+    
     <section ng-controller="PanelController as panel">
     <ul class="nav nav-pills">
     <li ng-class="{ active:panel.isSelected(1)}">
@@ -68,6 +68,7 @@
       </form>
      </div>
      </section>
-     </div>
+     </div>     
+     </ul><!-- close list-group -->
   </body>
 </html>
