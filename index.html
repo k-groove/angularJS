@@ -19,12 +19,10 @@
   <body class="container" ng-controller="StoreController as store">
   <!-- repeat a section for each item in an Array -->
     <ul class="list-group" ng-repeat="product in store.products">    
- <li class="list-group-item" >
-      <h3>
-        {{product.name}}
-        <em class="pull-right">{{product.price | currency}}</em>
-        <img ng-src="{{product.images[0].full}}"/>
-      </h3>
+ <li class="list-group-item" >      
+      <product-title></product-title>       
+     
+      <img ng-src="{{product.images[0].full}}"/>
     </li>
     
     <section ng-controller="PanelController as panel">
@@ -60,7 +58,7 @@
       	<cite>by: -{{reviewCtrl.review.author}}</cite>
       </blockquote>
       	<select ng-model="reviewCtrl.review.stars" required>
-      	<!--use loop to avoid typing out 1-5 stars-->
+      	<!--need to use loop to avoid typing out 1-5 stars-->
       		<option value="1">1 star</option>
       		<option value="2">2 star</option>
       		<option value="3">3 star</option>

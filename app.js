@@ -2,9 +2,17 @@
 (function() {
   var app = angular.module('gemStore', []);
 
+  app.directive('productTitle', function(){
+	return{
+		resrict: 'E',
+		templateUrl: 'product-title.html'
+	};
+});
+
   app.controller('StoreController', function(){
     this.products = gems;
   });
+
   app.controller("PanelController", function(){
   this.tab = 1;  
 
@@ -55,4 +63,9 @@
   ];
 
 
+
+
+
+
+/*closing brackets*/
 })();
