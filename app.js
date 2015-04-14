@@ -22,7 +22,6 @@
   		product.reviews.push(this.review);
   		this.review={};
   	};
-
   });
 
   var gems = [
@@ -33,14 +32,6 @@
     {full: 'images/azurite.jpg', thumb:'images/azurite-thumb.jpg'}
     ],
     reviews:[
-    {  	stars:5,
-    	body:"i love this product",
-    	author: "person@email.com"
-    },
-    {  	stars:1,
-    	body:"i hate this product",
-    	author:"hater@gmail.com"
-    }    
     ] 
    },
     { name: 'Bloodstone',
@@ -50,14 +41,6 @@
     {full: 'images/bloodstone.jpg', thumb:'images/bloodstone-thumb.jpg'}
     ],    
     reviews:[
-    {  	stars:5,
-    	body:"i love this product",
-    	author: "person@email.com"
-    },
-    {  	stars:1,
-    	body:"i hate this product",
-    	author:"hater@gmail.com"
-    }    
     ] 
      },
     { name: 'Zircon',
@@ -66,14 +49,6 @@
     {full: 'images/zircon.jpg', thumb:'images/zircon-thumb.jpg'}
     ],    
     reviews:[
-    {  	stars:5,
-    	body:"i love this product",
-    	author: "person@email.com"
-    },
-    {  	stars:1,
-    	body:"i hate this product",
-    	author:"hater@gmail.com"
-    }    
     ] 
      }
   ];
