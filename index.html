@@ -47,19 +47,20 @@
      <div class="panel" ng-show="panel.isSelected(3)">
      <h4>Reviews</h4>
      <blockquote ng-repeat="review in product.reviews">
-     <b>Stars: {{review.stars}}</b>
-     {{review.body}}
-     <cite>by {{review.author}}</cite>
+     <b>Stars: {{review.stars}}</b><br>
+     {{review.body}}<br>
+     <cite>by:{{review.author}}<br>on:{{review.createdOn|date}}</cite>
       </blockquote>
       
       <!--preview form, ng-model binds form value to the property-->
       <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
       <blockquote>
-      	<b>Stars:{{reviewCtrl.review.stars}}</b>
-      	{{reviewCtrl.review.body}}
-      	<cite>by: {{reviewCtrl.review.author}}</cite>
+      	<b>Stars:{{reviewCtrl.review.stars}}</b><br>
+      	{{reviewCtrl.review.body}}<br>
+      	<cite>by: -{{reviewCtrl.review.author}}</cite>
       </blockquote>
       	<select ng-model="reviewCtrl.review.stars" required>
+      	<!--use loop to avoid typing out 1-5 stars-->
       		<option value="1">1 star</option>
       		<option value="2">2 star</option>
       		<option value="3">3 star</option>
