@@ -8,14 +8,6 @@
 		templateUrl: 'product-title.html'
 	};
 });
-  app.directive('productPanels', function(){
-  	return {
-  		restrict: 'A',
-  		templateUrl: 'product-panels.html',
-  		controller:function(){}
-  		controllerAs: 'panels'
-  	};
-  });
 
   app.controller('StoreController', function(){
     this.products = gems;

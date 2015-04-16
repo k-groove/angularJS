@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <style>
     .ng-invalid.ng-dirty{border-color: red;
@@ -21,11 +20,9 @@
   <!-- repeat a section for each item in an Array -->
     <ul class="list-group" ng-repeat="product in store.products">    
  <li class="list-group-item" >      
-     <h3><product-title></product-title> </h3>       
+      <product-title></product-title>       
      
       <img ng-src="{{product.images[0].full}}"/>
-      <div>{{product.name}}
- <em class="pull-right"> {{product.price | currency}}</em></div>
     </li>
     
     <section ng-controller="PanelController as panel">
